@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="HomePage.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Scripts/adus.css" rel="stylesheet" />
+    
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Post Office</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="Adpost.aspx">Add postcard
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Adstamp.aspx">Add stampcard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="viewopost.aspx">View Post</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="viewstamp.aspx">View Stamp</a>
+        </li>
+            <li class="nav-item">
+          <a class="nav-link" href="viewadpost.aspx">View Ad Post</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
